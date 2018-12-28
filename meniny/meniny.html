@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="Milan Javor" name="author">
+    <meta content="Meniny" name="description">
+    <title>Meniny</title>
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="xmlParser.js"></script>
+    <script src="search.js"></script>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                myFunction(this);
+            }
+        };
+        xmlhttp.open("GET", "meniny.xml", true);
+        xmlhttp.send();
+    </script>
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="left">
+<!--
+        <a href='https://www.symptoma.it/'>https://www.symptoma.it/</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5c9f80fb3293e913071dbead5d8c2ffef6d1d4d2'></script>
+        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/460421/t/0"></script>
+-->
+        <span id="today"></span>
+    </div>
+
+    <div id="main">
+        <div id="alert" onclick="this.style.opacity=0 "></div>
+        <div id="heading">
+        <span>M e n i n y</span>
+        </div>
+        <p id="intro">Na tejto stránke je možné vyhľadávať meno a zistiť, kedy má meniny,
+            alebo vyhľadať dátum a zisiť, kto má vtedy meniny.</p>
+        <div id="form">
+            <input id="desiredDate" name="Dátum" placeholder="Dátum DD.MM." maxlength="6" title="" type="text">
+            <input id="desiredName" name="Meno" placeholder="Meno" maxlength="20" type="text">
+            <input id="submit" onclick="search();" type="submit"></button>
+            <br><br>
+            <p id="found"></p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

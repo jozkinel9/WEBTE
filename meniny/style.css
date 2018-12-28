@@ -1,0 +1,129 @@
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    width: 100%;
+    z-index: -1;
+    height: auto;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:auto;
+    background-color: #000000;
+}
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+
+#main{
+    margin-left: 17%;
+    padding: 0 20% 0% 20%;
+    width: 83%;
+    display: block;
+    height: 100%;
+}
+
+#left{
+    color:white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 17%;
+    height: 100vh;
+    background-color: #1B1B1B;
+    padding: 40px 10px 40px 10px;
+}
+
+#today{
+    padding-top: 100%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:30px;
+    font-weight:bold;
+    height: auto;
+}
+
+#alert{
+    padding: 5px;
+    background-color: #FFA31A;
+    color: #000000;
+    transition: 0.75s;
+    opacity: 0;
+    font-family:Arial,Helvetica,sans-serif;
+    height: 18px;
+    text-align: center;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+#heading{
+    margin-top: 200px;
+    font-size: 112px;
+    text-align: center;
+    font-family: Arial,Helvetica,sans-serif;
+    color:white;
+}
+
+#intro{
+    text-align: center;
+    border-radius: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color: #ffffff;
+}
+
+#found{
+    display: block;
+    overflow: auto;
+    background-color: black;
+    padding: auto;
+}
+
+#form{
+    text-align: center;
+}
+
+input{
+    border-radius:6px;
+    display:inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:25px;
+    font-weight:bold;
+    padding:10px;
+    width: 220px;
+    text-decoration:none;
+    color:#ffffff;
+}
+
+input[type=submit] {
+    background-color: #FFA31A;
+    color: #000000;
+    cursor:pointer;
+    border:0;
+}
+
+input[type=text] {
+    background-color:#363636;
+    border:1px solid #9e8e9c;
+}
+
+#found {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color:#ffffff;
+}
+body{
+    font-family: Arial,Helvetica,sans-serif;
+    margin :0;
+    height:100%;
+}
