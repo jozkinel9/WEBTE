@@ -1,0 +1,41 @@
+#li0,#li1,#li2,#li3,#li4{
+    display: inline;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #1B1B1B;
+    color:#ffffff;
+}
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+    background-color: #1B1B1B;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    width: 100%;
+    z-index: -1;
+    height: auto;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:auto;
+  //  background-color: #000000;
+}
+
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+    min-width: 100%;
+}
