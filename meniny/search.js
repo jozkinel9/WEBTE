@@ -152,33 +152,6 @@ function searchName(wantedName) {
     }
 }
 
-
-function createTable() {
-
-    if (document.contains(document.getElementById("table"))) {
-        document.getElementById("table").remove();
-    } else {
-        var table = document.createElement('table');
-        table.setAttribute("id", "table");
-    }
-
-    var table = document.createElement('table');
-    table.setAttribute("id", "table");
-
-    for (var i = 0; i < document.getElementById("row").value; i++) {
-        var tr = document.createElement('tr');
-        tr.setAttribute("class", "tr");
-        for (var j = 0; j < document.getElementById("col").value; j++) {
-            var td = document.createElement('td');
-            td.setAttribute("class", "td");
-            tr.appendChild(td);
-        }
-        table.appendChild(tr);
-    }
-    document.body.appendChild(table);
-}
-
-
 //zdroj https://gist.github.com/sgmurphy/3095196
 var table = {
     // Latin
