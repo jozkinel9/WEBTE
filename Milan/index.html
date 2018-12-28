@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Milan Javor">
+    <meta name="description" content="DnD hra">
+    <title>Hra</title>
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css">
+    <link rel="stylesheet" media="print" href="print.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="game.js"></script>
+</head>
+
+<body>
+
+<div id="left">
+    <img src="kraje/TT.png" height="233" width="142" alt="TT" class="draggable" id="draggable1">
+    <img src="kraje/ZA.png" height="170" width="221" alt="ZA" class="draggable" id="draggable2">
+    <img src="kraje/BB.png" height="179" width="271" alt="BB" class="draggable" id="draggable3">
+    <img src="kraje/BA.png" height="127" width="88" alt="BA" class="draggable" id="draggable4">
+</div>
+
+<div id="mid">
+    <h1 id="heading">PUZZLE SLOVENSKO</h1>
+    <img src="kraje/Slovensko_empty.png" height="390" width="800" alt="sk_empty" id="map">
+    <div id="dropparent">
+        <div class="droppable" id="droppable1"></div>
+        <div class="droppable" id="droppable2"></div>
+        <div class="droppable" id="droppable3"></div>
+        <div class="droppable" id="droppable4"></div>
+        <div class="droppable" id="droppable5"></div>
+        <div class="droppable" id="droppable6"></div>
+        <div class="droppable" id="droppable7"></div>
+        <div class="droppable" id="droppable8"></div>
+    </div>
+    <br><br>
+    <div id="controls">
+        <input type="button" id="start" value="ŠTART" onclick="init()">
+        <input type="button" id="demo" value="DEMO" onclick="ani()">
+        <input type="button" id="reset" value="HRAŤ ZNOVU" onclick="reset()">
+    </div>
+    <p id="timer"></p>
+    <div id="success">
+        <p>Gratulujem, vyhral si!</p>
+    </div>
+</div>
+
+<div id="right">
+    <img src="kraje/NR.png" height="205" width="193" alt="NR" class="draggable" id="draggable5">
+    <img src="kraje/KE.png" height="147" width="300" alt="KE" class="draggable" id="draggable6">
+    <img src="kraje/PO.png" height="143" width="360" alt="PO" class="draggable" id="draggable7">
+    <img src="kraje/TN.png" height="168" width="201" alt="TN" class="draggable" id="draggable8">
+</div>
+
+<footer>
+    <p>Vytvoril Milan Javor</p>
+</footer>
+
+<script src="demoanim.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+#left, #mid, #right{
+    display: block;
+    float: left;
+}
+
+#mid{
+    width: 800px;
+}
+
+#left, #right{
+    width: 360px;
+    height: 720px;
+    background-color: #7a7a52;
+    border-radius: 10px;
+}
+
+#map{
+    position: absolute;
+    z-index: 0;
+}
+
+#dropparent{
+    position: relative;
+    color: #000;
+    height: 390px;
+    width: 800px;
+    z-index: -1;
+}
+
+.droppable{
+    position: absolute;
+}
+
+#droppable1{
+    top:136px;
+    left:26px;
+    height:233px;
+    width:142px;
+}
+
+#droppable2{
+    top:12px;
+    left:233px;
+    height:170px;
+    width:221px;
+}
+
+#droppable3{
+    top:147px;
+    left:234px;
+    height:179px;
+    width:271px;
+}
+
+#droppable4{
+    top:184px;
+    left:10px;
+    height:127px;
+    width:88px;
+}
+
+#droppable5{
+    top:177px;
+    left:116px;
+    height:205px;
+    width:193px;
+}
+
+#droppable6{
+    top:143px;
+    left:467px;
+    height:147px;
+    width:300px;
+}
+
+#droppable7{
+    top:57px;
+    left:433px;
+    height: 143px;
+    width:360px;
+}
+
+#droppable8{
+    top:59px;
+    left:86px;
+    height:168px;
+    width:201px;
+}
+
+.draggable{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#draggable5,#draggable6,#draggable7,#draggable8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.draggable1w, .draggable2w,.draggable3w,.draggable4w,.draggable5w,.draggable6w,.draggable7w,.draggable8w{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*wrapper classes for animations*/
+.draggable1w {
+    animation: d1anim 3s forwards;
+}
+
+@keyframes d1anim{
+    0%   {left:0px; top:0px;}
+    100%  {left: 277px; top:264px;}
+}
+
+.draggable2w{
+    animation: d2anim 3s forwards;
+    animation-delay: 3s;
+}
+@keyframes d2anim{
+    0%   {left:0px; top:0px;}
+    100%  {left:523.5px; top:-93px;}
+}
+
+.draggable3w{
+    animation: d3anim 3s forwards;
+    animation-delay: 6s;
+}
+@keyframes d3anim{
+    0%   { left:0px; top:0px;}
+    100%  { left: 549px; top: -128px;}
+}
+.draggable4w{
+    animation: d4anim 3s forwards;
+    animation-delay: 9s;
+
+}
+@keyframes d4anim{
+    0%   { left:0px; top:0px;}
+    100%  { left:234px; top:-270px;}
+}
+
+.draggable5w{
+    animation: d5anim 3s forwards;
+    animation-delay: 12s;
+
+}
+@keyframes d5anim{
+    0%   { left:0px; top:0px;}
+    100%  { left:-767.5px; top:297px;}
+}
+
+.draggable6w{
+    animation: d6anim 3s forwards;
+    animation-delay: 15s;
+
+}
+@keyframes d6anim{
+    0%   { left:0px; top:0px;}
+    100%  { left:-363px; top:42px;}
+}
+
+.draggable7w{
+    animation: d7anim 3s forwards;
+    animation-delay: 18s;
+
+}
+@keyframes d7anim{
+    0%   { left:0px; top:0px;}
+    100%  { left:-367px; top:-207px;}
+}
+
+.draggable8w{
+    animation: d8anim 3s forwards;
+    animation-delay: 21s;
+
+}
+@keyframes d8anim{
+    0%   { left:0px; top:0px;}
+    100%  { left:-793.5px; top:-364px;}
+}
+
+/*control buttons */
+#controls{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    text-align: center;
+}
+
+#start, #reset, #demo{
+    border-radius:6px;
+    border:1px solid #9e8e9c;
+    display:inline-block;
+    cursor:pointer;
+    font-family: 'Roboto',sans-serif;
+    font-size:25px;
+    font-weight:bold;
+    padding:10px;
+    width: 220px;
+    height: 90px;
+    text-decoration:none;
+}
+
+#start {
+    background-color:#7322d1;
+    color:#ffffff;
+}
+
+#demo, #reset{
+    background-color:#ffffff;
+    color:#7322d1;
+}
+
+#start:disabled, #reset:disabled, #demo:disabled{
+    color: #FFFFFF;
+    background-color:#c2b3c2;
+    cursor: not-allowed;
+}
+
+/*game status*/
+#success{
+    display: none;
+}
+
+#timer,#success{
+    text-align: center;
+    width: auto;
+}
+
+#heading{
+    font-weight:bold;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+}
+
+body{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto',sans-serif;
+    font-size:25px;
+    font-weight:bold;
+    color:#7322d1;
+    padding: 0px;
+    width:1520px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size:13px;
+    font-weight:bold;
+    color: #7322d1;
+    background-color: white;
+    text-align: center;
+}
