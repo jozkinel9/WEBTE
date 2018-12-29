@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PornHubLookAlike</title>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css">
+</head>
+<body onload="createMenu()">
+<div id="header">
+    <h1 id="heading">Skromná stránka</h1>
+    <ul id="menu"></ul>
+</div>
+
+<div id="wrapper">
+    <div id="left">LEFT</div>
+    <div id="main"><h1>Ahoj!</h1>
+        <p>Vitajte na našej maličkej webovej stránke. Moje meno je Milan Javor. Pochádzam zo Šintavy. Študujem aplikovanú
+            informatiku na STU FEI. Bývam na internáte Mladosť v Mlyskej doline. Keď si popri škole nájdem nejaký
+            voľný čas, tak rád počúvam hip-hop alebo trap alebo pozerám seriály. Cez víkendy chodím domov, keďže bývam
+            len 60km od Bratislavy. Vtedy idem s kamarátmi na pivo do nášho obľúbeného podniku <i>DaVinči</i>.
+            Keďže ma už nič nenapadá, pripájam časť receptu na guláš, aby som mal dosť textu. Vraví sa, že do gulášu ide
+            toľko cibule, koľko mäsa. Ale objemovo, nie na váhu! Guláš by bol z veľkého množstva cibule príliš sladký a
+            z mála cibule zasa planý. Takže si nakrájame do misky mäso a do rovnakej misky nasekáme v rovnakom množstve
+            cibuľu.Cibuľu potom osmažíme na masti na strednom plameni dokým nezozlátne a trochu neskaramelizuje. Vtedy
+            je to ono. Ďalej pridáme pokrájané čerstvé paradajky. Dobré sú paradajky z plechovky - lúpané a krájané,
+            ktoré sú dobre zrelé a chutné. Paradajky podusíme na cibuli, aby vznikla červená hustá kaša. Je potrebné
+            nechať skoro všetku tekutinu odpariť. Do tohto cibuľovo-paradajkového základu prisypeme sladkú aj štipľavú
+            mletú papriku a pre farbu a výraznejšiu chuť pridáme aspoň lyžicu maďarskej paprikovej pasty. Ďalej pridáme
+            do základu mäso nakrájané na väčšie kocky a za stáleho miešania restujeme. Pridáme soľ a miešame ďalej, kým
+            sa mäso nezatiahne. Pridáme nakrájané svetlozelené papriky - slovenské alebo maďarské, ktoré zvýraznia vôňu
+            gulášu. Ak chceme guláš pikantnejší, pridáme teraz nasekané feferónky alebo chilli papričku.Podlejeme
+            trochou vody, premiešame a kastról zakryjeme, aby sa guláš dusil na miernom ohni. Vodou podlievame postupne.
+            Občas premiešame a sledujeme, aby guláš vrel. Dusíme, pokým nie je mäso mäkké. Po asi dvoch hodinách sa
+            prebytočná tekutina odparí, guláš sa sám zahustí a mäso je krehké. Hotový maďarský guláš by sa mal podávať
+            s haluškami, alebo s bielym maďarským chlebom. Alebo urobíme houskové knedlíky, ako sa u nás často podáva.</p>
+    </div>
+    <div id="right">RIGHT</div>
+</div>
+</body>
+</html>
