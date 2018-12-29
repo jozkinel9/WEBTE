@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skromná stránka</title>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css">
+</head>
+<body onload="createMenu()">
+<div id="header">
+    <h1 id="heading">Skromná stránka</h1>
+    <ul id="menu"></ul>
+</div>
+
+<div id="wrapper">
+    <div id="left">LEFT</div>
+    <div id="main">
+        <h1>How to make a Nandroid Backup</h1>
+        <b>Warning:</b> before you make a backup with TWRP you must remove all Lockscreen Security. If you do not do this you will not be able to unlock your device after restoring your backup (entering your pin/pattern/password will result in an "incorrect pin/pattern/password" message), you'll be forced to perform a factory reset to boot into Android.
+        <br><br>
+        To remove lockscreen security go to<br>
+        Settings > Security > Screen Lock and set it to Swipe/None.
+        <br><br>
+        A Nandroid Backup is a very important thing to have before installing any custom software on your device. It's basically a backup of your stock system that you can fall back on if anything goes wrong or if you just want your stock ROM back.
+        <br><br>
+        You can also use Nandroid Bckup to create a backup of your favorite ROM set up exactly the way you like it. The backup you create can be easily restored using the restore tool in TWRP recovery.
+        <br><br>
+        To Create Nandroid Backup:
+        <br>
+        <ol>
+            <li>Boot into TWRP Recovery.</li>
+            <li>Go to Backup Menu and select all the listed partitions.</li>
+            <li>Name the Backup if needed (Optional)</li>
+            <li>Swipe to take Backup.</li>
+            <li>Reboot System when done.</li>
+        </ol>
+        <br>
+        Your Nandroid will be stored in the Backup Folder inside TWRP Folder <i>/sdcard/TWRP/BACKUPS</i></p>
+
+        <a href="https://forum.xda-developers.com/showpost.php?p=74504360&postcount=7">zdroj</a>
+    </div>
+    <div id="right">RIGHT</div>
+</div>
+</body>
+</html>
